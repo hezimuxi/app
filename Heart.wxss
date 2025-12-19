@@ -1,1 +1,122 @@
-/* pages/Heart.wxss */
+/* 页面全局背景 */
+page {
+  background: linear-gradient(145deg, #83a4d4, #b6fbff); /* 蓝紫渐变背景 */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* 动态背景装饰 */
+.background .floating-circle {
+  position: absolute;
+  border-radius: 50%;
+  animation: float 6s infinite ease-in-out alternate;
+}
+
+.circle1 { width: 200px; height: 200px; background: rgba(255, 255, 255, 0.2); top: 10%; left: 15%; }
+.circle2 { width: 300px; height: 300px; background: rgba(255, 255, 255, 0.3); top: 50%; left: 60%; }
+.circle3 { width: 250px; height: 250px; background: rgba(255, 255, 255, 0.15); top: 80%; left: 20%; }
+
+/* 修改主容器样式：调整位置 */
+.outer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  top: -50px; /* 将整个白色框向上移动 */
+}
+
+.main-container {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 标题与描述样式 */
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  display: block; /* 独占一行 */
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px; /* 标题与副标题间距 */
+  text-align: center;
+}
+
+.subtitle {
+  display: block; /* 独占一行 */
+  font-size: 16px;
+  color: #666666;
+  text-align: center;
+}
+
+/* 信息卡片样式 */
+.info-card {
+  background: rgba(131, 196, 244, 0.1);
+  border: 2px solid #83a4d4;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.info-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.info-content {
+  font-size: 16px;
+  color: #555555;
+}
+
+/* 按钮区域样式带间距 */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+button {
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  outline: none;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+/* 主按钮 */
+.button-primary {
+  background: #57ad68;
+  color: #ffffff;
+}
+
+.button-primary:hover {
+  background: #4a9f5a;
+  transform: scale(1.03);
+}
+
+/* 次按钮 */
+.button-secondary {
+  background: #ffffff;
+  color: #57ad68;
+  border: 2px solid #4caf50;
+}
+
+.button-secondary:hover {
+  background: #eaf7ef;
+  transform: scale(1.03);
+}

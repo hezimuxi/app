@@ -1,0 +1,16 @@
+<view class="heart-rate-page">
+  <view class="header">心率监测</view>
+  <view class="round-btn-area">
+    <button class="round-btn breath-anim {{pressing ? 'pressed':''}}"
+            bindtouchstart="onBtnDown" bindtouchend="onBtnUp"
+            bindtap="onMeasureHeartRate">
+      <text class="btn-text">测心率</text>
+    </button>
+  </view>
+  <view class="result-area">
+    <text class="result-text">{{result}}</text>
+    <view wx:if="{{heartRate !== null}}">
+      <text class="rate-value">当前心率：{{heartRate}}</text>
+    </view>
+  </view>
+</view>

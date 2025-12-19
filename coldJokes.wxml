@@ -1,0 +1,17 @@
+<view class="jokes-container">
+  <!-- 冷笑话题目 -->
+  <view class="question">
+    <text class="question-text">问题：{{currentJoke.question}}</text>
+  </view>
+
+  <!-- 显示答案按钮 -->
+  <button class="answer-button" bindtap="showAnswer">点击显示答案</button>
+
+  <!-- 冷笑话答案 -->
+  <view class="answer" wx:if="{{showingAnswer}}">
+    <text class="answer-text">答案：{{currentJoke.answer}}</text>
+  </view>
+
+  <!-- 刷新冷笑话按钮 -->
+  <button class="refresh-button" bindtap="refreshJoke">点击刷新冷笑话</button>
+</view>

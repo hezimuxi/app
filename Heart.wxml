@@ -1,4 +1,25 @@
-<text >提示信息：</text>
-<text>{{result}}</text>
-<button type="primary" bindtap="touchBtn_gettoken">获取 token</button>
-<button type="default" bindtap="touchBtn_getshadow">获取设备影子</button>
+<view class="outer-container">
+  <!-- 背景动态装饰 -->
+  <view class="background">
+    <view class="floating-circle circle1"></view>
+    <view class="floating-circle circle2"></view>
+    <view class="floating-circle circle3"></view>
+  </view>
+
+  <!-- 主体 UI -->
+  <view class="main-container">
+    <view class="header">
+      <text class="title">设备管理控制台</text>
+      <text class="subtitle">请点击按钮开始操作</text>
+    </view>
+
+    
+
+    <!-- 操作按钮区域 -->
+    <view class="button-group">
+  <button class="button-primary" bindtap="navigateToHeartRate">测心率</button>
+  <button class="button-secondary" bindtap="navigateToGame">玩小游戏</button>
+  <button class="button-secondary" bindtap="navigateToJokes">冷笑话</button>
+</view>
+  </view>
+</view>

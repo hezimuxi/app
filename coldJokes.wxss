@@ -1,0 +1,59 @@
+.jokes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(145deg, #ffedd5, #ffe4b3); /* 温暖渐变背景 */
+  padding: 20px;
+}
+
+/* 冷笑话问题样式 */
+.question {
+  background: #fef3c7; /* 浅色背景 */
+  border: 2px solid #facc15; /* 问题边框 */
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 20px; /* 下方间距 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 提升质感 */
+}
+
+.question-text {
+  color: #333333; /* 深色字体 */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; /* 居中文本 */
+}
+
+/* 冷笑话答案样式 */
+.answer {
+  background: #d1fae5; /* 浅绿色背景 */
+  border: 2px solid #10b981; /* 答案边框颜色 */
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-top: 20px; /* 间距保持一致 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 提升质感 */
+}
+
+.answer-text {
+  color: #065f46; /* 深绿色字体 */
+  font-size: 18px; /* 答案字体稍小 */
+  text-align: center;
+}
+
+/* 冷笑话按钮样式 */
+.answer-button, .refresh-button {
+  background-color: #4CAF50; /* 绿色按钮背景 */
+  color: #FFFFFF; /* 按钮字体白色 */
+  font-size: 16px; /* 按钮字体大小 */
+  padding: 10px 20px; /* 按钮内边距 */
+  border: none; /* 无边框 */
+  border-radius: 25px; /* 圆角按钮 */
+  margin-top: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* 按钮阴影效果 */
+  transition: transform 0.3s ease; /* 动画效果：点击缩小 */
+}
+
+.answer-button:active, .refresh-button:active {
+  transform: scale(0.9); /* 点击时缩小 */
+}
